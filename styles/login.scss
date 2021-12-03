@@ -64,16 +64,11 @@
     
         button {
             width: 100%;
-            padding: 15px;
-            background-color: $primaryColor;
-            border-radius: 12px;
-            color: white;
-            border: none;
             margin-top: 35px;
         }
     }
 
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width:$mediaQueryDesktop) {
         width: 100%;
         display: flex;
         flex-direction: row;

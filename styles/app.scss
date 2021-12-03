@@ -30,3 +30,13 @@ body {
 
 @import './config.scss';
 @import './login.scss';
+@import './header.scss';
+@import './footer.scss';
+
+button {
+    padding: 15px;
+    background-color: $primaryColor;
+    border-radius: 12px;
+    color: white;
+    border: none;
+}
