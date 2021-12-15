@@ -56,7 +56,7 @@ export const List: NextPage<ListProps> = ({ tasks, getFilteredList }) => {
             await executeRequest('task?id='+id, 'PUT', body);
             await getFilteredList();
             closeModal();
-        } catch (e) {
+        } catch (e : any) {
             if (e?.response?.data?.error) {
                 console.log(e?.response);
                 setErrorMsg(e?.response?.data?.error);
@@ -77,7 +77,7 @@ export const List: NextPage<ListProps> = ({ tasks, getFilteredList }) => {
             await executeRequest('task?id='+id, 'DELETE');
             await getFilteredList();
             closeModal();
-        } catch (e) {
+        } catch (e : any) {
             if (e?.response?.data?.error) {
                 console.log(e?.response);
                 setErrorMsg(e?.response?.data?.error);

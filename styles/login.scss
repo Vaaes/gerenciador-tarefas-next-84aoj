@@ -17,6 +17,15 @@
             max-width: 300px;
         }
 
+        .button-register{
+            background-color: $mediumGreyColorOpacity;
+            color: $primaryColor;
+        }
+
+        .p-success{
+            color: $primaryColor;
+        }
+
         .input {
             display: flex;
             flex-direction: row;
@@ -27,7 +36,9 @@
                 margin-right: 10px;
                 margin-top: -10px;
             }
-    
+            
+
+
             input {
                 width: 234px;
                 font-size: 14px;

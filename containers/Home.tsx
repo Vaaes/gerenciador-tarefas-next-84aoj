@@ -80,7 +80,7 @@ export const Home : NextPage<HomeProps> = ({setToken}) => {
             await executeRequest('task', 'POST', body);
             await getFilteredList();
             closeModal();
-        }catch(e){
+        }catch(e : any){
             if(e?.response?.data?.error){
                 console.log(e?.response);
                 setErrorMsg(e?.response?.data?.error);
